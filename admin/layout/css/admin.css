@@ -1,0 +1,582 @@
+/* stary main rules */
+body
+{
+	background-color: #f4f4f4;
+	font-size: 16px;
+}
+h1
+{
+	margin-bottom: 40px;
+	font-size: 35px;
+	font-weight: bold;
+	color: grey;
+}
+.fix
+{
+	clear: both;
+}
+.form-control
+{
+	position: relative;
+}
+.astrisk
+{
+	color: red;
+	font-size: 30px;
+	position: absolute;
+	right: 25px;
+	top: 8px;
+}
+.nice_message
+{
+	background-color: white;
+	padding:10px;
+	padding-left: 20px;
+	border-left: 4px solid red;
+	border-radius : 5%;
+	width: 90%;
+	margin-bottom: 10px;
+}
+/* end main rules */
+/* start login form */
+.login
+{
+	width: 300px;
+	margin: 100px auto;
+}
+.login h4
+{
+	color: #888;
+	display: block;
+}
+.login input
+{
+	margin-bottom: 10px;
+}
+.login .form-controll 
+{
+	background-color: #EAEAEA;
+}
+.login .btn
+{
+	background-color: #008dde; 
+}
+.login .btn:hover
+{
+
+}
+/* end login form */
+
+
+/* start navbar style */
+.admin_navbar .navbar
+{
+	margin-bottom: 0px;
+	border-radius: 0px;
+	background-color:#333;
+}
+.admin_navbar .navbar .navbar-brand
+{
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.admin_navbar .dropdown-menu
+{
+	border: none;
+	border-radius: 0;
+	-webkit-transition:padding 0.9s ease-in-out;
+	-moz-transition:padding 0.9s ease-in-out;
+	-o-transition:padding 0.9s ease-in-out;
+	transition:padding 0.9s ease-in-out;
+	box-shadow: #74b9ff -4px 4px 10px -3px;
+	padding: 0px;
+	font-size: 1em;
+	width: 100%;
+
+}
+.admin_navbar .dropdown-menu li
+{
+	background-color: #2980b9;
+}
+.admin_navbar .dropdown-menu li:hover
+{
+	background-color: #FFF;
+}
+.admin_navbar .dropdown-menu li a
+{
+	color: #FFF;
+	padding: 10px 15px;
+	-webkit-transition:padding 0.5s ease-in-out;
+	-moz-transition:padding 0.5s ease-in-out;
+	-o-transition:padding 0.5s ease-in-out;
+	transition:padding 0.5s ease-in-out;
+}
+.admin_navbar .dropdown-menu li a:hover,.admin_navbar .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover
+{
+	background-color: #74b9ff;
+	padding-left: 25px;
+	color: #333;
+	border-right: 5px solid #81ecec;
+}
+.admin_navbar .dropdown a 
+{
+	color: #FFf;
+}
+.admin_navbar .dropdown a .user
+{
+	color: #fff;
+}
+.admin_navbar .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover
+{
+	background-color: #2980b9;
+}
+/* end navbar style */
+/* start Show password in the forms */
+.show-pass
+{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	cursor: pointer;
+}
+/* end Show password in the forms */
+
+/* Start The Dashboard Style */ 
+.home-stats .stat
+{
+	background-color:#EEE ;
+	font-size: 15px;
+	padding: 30px;
+	margin: 0px;
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	min-height: 130px;
+	overflow:hidden;
+}
+
+.home-stats .st-members
+{
+	background-color: #0984e3; 
+}
+.home-stats .st-pending
+{
+	background-color: #d63031;
+}
+.home-stats .st-items
+{
+	background-color: #e17055;
+}
+.home-stats .st-comments
+{
+	background-color: #ff7675;
+}
+
+
+.home-stats a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.home-stats .info
+{
+	float: right;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	overflow: hidden;
+}
+.home-stats .st-members , .home-stats .st-pending , .home-stats .st-items , .home-stats .st-comments
+{
+	position: relative;
+}
+.home-stats .st-members span , .home-stats .st-pending span , .home-stats .st-items span , .home-stats .st-comments span
+{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	font-size: 55px;
+	color: #FFF;
+}
+.home-stats .st-members .member-num , .home-stats .st-pending .pending-num , .home-stats .st-items .items-num , .home-stats .st-comments .comments-num
+{
+	font-size: 35px;
+}
+
+/* Start Latest Items and Comments and Items */
+
+.latest 
+{
+	margin-top: 10px;
+	background-color: #DDD;
+
+}
+.latest-con
+{
+	padding-top: 20px;
+	background-color: #DDD;
+}
+
+.latest .latest-hide
+{
+	color: #888;
+	cursor: pointer;
+}
+.latest .latest-hide:hover
+{
+	color: #333;
+}
+
+
+.last-members li
+{
+	padding: 5px;
+	overflow: hidden;
+	border: 1px solid #000;
+
+}
+
+.last-members li:nth-child(odd)
+{
+	background-color: #DDD;
+}
+.last-members li:hover
+{
+	background-color: #333;
+	color: #FFF;
+}
+.last-members li .btn
+{
+	padding: 5px 10px;
+	margin-left: 5px;
+	border: 1px solid #000;
+}
+.last-members li .btn-info
+{
+	padding-left: 18px;
+	border: 1px solid #000;
+}
+/* Items */
+
+.last-items li
+{
+	overflow: hidden;
+	padding: 5px;
+	border: 1px solid #000;
+}
+.last-items li .btn
+{
+	padding: 5px 9px;
+	margin-left: 5px;
+	border: 1px solid #000;
+}
+.last-items li .btn-info
+{
+	padding-left: 18px;
+	border: 1px solid #000;
+}
+.last-items li .btn-primary
+{
+	padding-left: 5px;
+	border: 1px solid #000;
+}
+.last-items li:nth-child(even)
+{
+	background-color: #DDD;
+}
+.last-items li:hover
+{
+	background-color: #333;
+	color: #fff;
+}
+/* start Dashboard comments section */
+.last_comments li span
+{
+	background-color: #DDD;
+	float: left;
+	overflow: hidden;
+	width: 120px;
+	margin: 0px 15px 0px 0px;
+	padding: 5px;
+	border-radius: 10%;
+	text-align: center;
+}
+.last_comments li p
+{
+	background-color:#EEE;
+	padding: 10px;
+	float: left;
+	width: calc(100% - 140px);
+	position: relative;
+	border-radius: 3%;
+	word-wrap: break-word;
+}
+.last_comments li p:hover
+{
+	background-color: #DDD;
+}
+
+.last_comments li p:before
+{
+	content: "";
+	border-style: solid;
+	border-color: transparent #EEE transparent transparent;
+	border-width: 15px;
+	position: absolute;
+	top: 0px;
+	left: -28px;
+}
+.last_comments .buttons
+{
+	border-bottom: 2px solid #888;
+	margin-bottom: 5px;
+
+}
+.last_comments .buttons .btn
+{
+    padding: 5px 9px;
+    margin: 4px;
+    width: 30%;
+
+}
+/* End Dashboard comments section */
+/* End The Dashboard Style */ 
+
+
+/* start manage members main table */
+.main-table
+{
+	-webkit-box-shadow : 0 3px 10px #CCC;
+	-moz-box-shadow : 0 3px 10px #CCC;
+	-o-box-shadow : 0 3px 10px #CCC;
+	box-shadow : 0 3px 10px #CCC;
+}
+.main-table tr
+{
+	background-color: none;
+}
+.main-table td
+{
+	background-color: #FFF;
+	vertical-align: middle !important;
+	word-wrap: break-word !important;
+}
+.main-table tr:first-child td
+{
+	background-color: #333;
+	color: #fff;
+}
+.main-table td:nth-child(odd):hover
+{
+	background-color: #808080;
+	color: #FFF;
+}
+.main-table td:nth-child(even):hover
+{
+	background-color: #696969;
+	color: #fff;
+}
+.main-table .btn
+{
+	padding: 3px 10px;
+	margin: 5px 0px ;
+}
+/* start add new member style */
+.user_image_container .user_image_background
+{
+	z-index: 1;
+	background-color: #FFF;
+	position: relative;
+	border-radius: 5%;
+}
+.user_image_container .user_image_background .user_image_alert
+{
+	position: absolute;
+	top: 7.5px;
+	left: 7.5px;
+}
+.user_image_container .user_image_background .btn
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-radius: 5%;
+}
+.user_image_container .user_image
+{
+	opacity: 0;
+	z-index: 2;
+}
+/* end add member stlye */
+/* end manage members main table */
+/* start Categories Page */
+/* start manage CAtegories main table */
+.categories .panel-heading
+{
+	background-color: #34495e;
+	color: #959595;
+	font-weight: bold;
+}
+.categories .option a , .categories .option span
+{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+.categories .option .active
+{
+	color: red;
+}
+.categories .panel-body
+{
+	padding: 0px;
+}
+.categories .cat
+{
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.categories .cat .hidden-buttons
+{
+	position: absolute;
+	top: 10px;
+	right: 10px; 
+}
+.categories .cat .hidden-buttons .btn-primary
+{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	right: 75px; 
+	top: -120px;
+}
+.categories .cat .hidden-buttons .btn-danger
+{
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	position: absolute;
+	right:10px; 
+	top: -120px;
+}
+.categories .cat:hover .btn-primary,.categories .cat:hover .btn-danger
+{
+	top:10px;
+}
+.categories .cat:hover
+{
+	background-color: #EEE;
+}
+
+
+.categories .cat h3
+{
+	margin: 0px;
+	cursor: pointer;
+	font-weight: bold;
+	color: #6A6A6A;
+}
+.categories .cat .full-view p
+{
+	margin: 10px 0px;
+	color: #707070;
+}
+.categories .cat .Ordring , .categories .cat .Comments ,.categories .cat .Visibility ,.categories .cat .Adsdesabled
+{
+	margin-left: 5px;
+	padding: 5px;
+	font: lighter 15px italic;
+	background-color: #e74c3c;
+	color: white;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.categories .cat .Ordring:hover,.categories .cat .Comments:hover ,.categories .cat .Visibility:hover ,.categories .cat .Adsdesabled:hover
+{
+	background-color: #c0392b;
+	cursor: not-allowed;
+	padding-left: 20px;
+}
+.categories .cat .Comments
+{
+	background-color: #273c75;
+}
+.categories .cat .Comments:hover
+{
+	background-color: #192a56;
+}
+.categories .cat .Adsdesabled
+{
+	background-color: #00a8ff;
+}
+.categories .cat .Adsdesabled:hover
+{
+	background-color: #0097e6;
+}
+.categories .cat .Ordring
+{
+	background-color: #2ecc71;
+	color: black;
+}
+.categories .cat .Ordring:hover
+{
+	background-color: #27ae60;
+}
+.cat .hideit
+{
+	width: 100%;
+	min-height:20px; 
+	position: relative;
+	cursor: pointer;
+}
+.cat .hideit i
+{
+	position: absolute;
+	bottom: -10px;
+	right: 50%;
+}
+.categories hr
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.categories .cat:last-of-type ~ hr
+{
+	display: none;
+}
+.add-button
+{
+	margin-top: -15px;
+	margin-bottom: 20px;
+}
+.subcats_h3_categories
+{
+	margin:20px 10px 10px !important;
+}
+.subcats_container
+{
+	margin: 20px !important;
+}
+.delete_cat
+{
+	color:#f00;
+	font-size: 15px;
+	margin-left: 10px;
+	display:none;
+}
+/* end manage CAtegories main table */
+/* end Categories Page */
+/* Start Items page */
+/* start Manage Items */
+/* End Manage Items */
+/* start Add Item Page */
+/* End Add Item Page */
+/* End Items page */

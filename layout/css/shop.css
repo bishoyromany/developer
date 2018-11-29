@@ -1,0 +1,1465 @@
+body
+{
+	font-size: 16px;
+	margin: 0px ;
+	padding:0px;
+	background-color: #DDD;
+}
+/*
+######## This is The Main project 
+###################### style To make  every thing 
+######### easy to use like bootstrap
+ */
+/* start main style */
+i
+{
+	animation: icon 0.5s linear 0s infinite alternate; 
+}
+
+.fix
+{
+	clear: both;
+}
+.form-control
+{
+	position: relative;
+}
+.astrisk
+{
+	color: red;
+	font-size: 30px;
+	position: absolute;
+	right: 25px;
+	top: 8px;
+}
+.nice_message
+{
+	background-color: #EEE;
+	padding:10px;
+	padding-left: 20px;
+	border-left: 4px solid red;
+	border-radius : 5%;
+	margin: 10px;
+}
+.nice_message_success
+{
+	background-color: #EEE;
+	padding:10px;
+	padding-left: 20px;
+	border-left: 4px solid green;
+	border-radius : 5%;
+	margin: 10px;
+}
+h1
+{
+	color: #888;
+}
+.paginationa
+{
+	padding-top: 20px;
+	text-align: center;
+}
+.paginationa a
+{
+	border:2px solid black;
+	margin-left: 10px;
+	padding: 5px;
+}
+.paginationa .paginationactive
+{
+	color: red;
+}
+/* end main style */
+/*###############
+################# End main style
+################# */
+
+/* ##################
+#####################	Start Navbar Style 
+##################### */
+/* start user nav style */
+.user_navbar .user_nav 
+{	
+	background-color: #444;
+	color: rgb(255, 255, 255);
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 50px;
+	max-height: 50px;
+	width: 100%;
+	z-index: 999;
+}
+.user_navbar .user_nav .user_click .user_name
+{
+	margin-top: -10px;
+	display: inline-block;
+	text-align: right;
+}
+.make_img_absolute
+{
+	position: absolute;
+	top: 5px;
+	right: 0px;
+}
+.user_nav .user_img_contianer
+{
+	position: relative;
+	margin-left: 10px;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.user_nav .user_img_contianer img
+{
+	height: 100%;
+	width: 100%;
+}
+.user_navbar .navbar-nav .li_underline
+{
+	position: relative;
+}
+.user_navbar .navbar-nav .li_underline:after
+{
+	content: " ";
+	position: absolute;
+	top:40px;
+	left: 0px;
+	border: 2px solid #888;
+	width : 100% ;
+}
+
+.user_navbar .user_nav .user_click:hover,
+.user_navbar .user_nav .user_click:active
+{
+	background-color: #333;
+}
+
+.user_navbar .user_nav .user_click
+{
+	padding: 14px 14px 14px 14px;
+	cursor: pointer;
+	position: relative;
+	z-index: 999;
+	text-align: center;
+	min-width: 180px;
+}
+.user_navbar .user_nav span .down
+{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+}
+.user_links
+{
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	text-align: center;
+	background-color: #333;
+	width: 100%;
+	display: none;
+}	
+.user_links a
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin:5px auto;
+	display: block;
+	color: #EEE;
+	text-decoration: none;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	overflow: hidden;
+}	
+.user_links a:hover
+{
+	background-color: #444;
+	padding-right: 15px;
+}
+.user_links .bom
+{
+	position: absolute;
+	left: -100px;
+	top: 0px;
+	border-style: solid;
+	border-width: 15px;
+	border-color: transparent transparent transparent #fff ;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.user_links a:hover .bom
+{
+	left: 0px;
+}
+
+.active_user
+{
+	background-color: #333;
+}
+/* log in and sign up into navbar Style */
+.user_navbar .logo
+{
+	font-size:20px;
+	color: #FFF;
+}
+.sign_upin_phone
+{
+    width: 33%;
+    position: absolute;
+    top: 15px;
+    left: 40%;
+}
+.sign_upin_phone a
+{
+	display: inline;
+}
+.login_signup
+{
+	color: #fff;
+	border:2px solid black;
+	margin-top: 3px;
+	padding: 5px;
+	position: relative;
+}
+.login_signup a
+{
+	color: #fff;
+}
+.login_signup a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.login_form
+{
+	position: absolute;
+	background-color: #FFF;
+	border:2px solid black;
+	box-shadow: 5px 11px 22px 4px black;
+	border-radius: 5%;
+	top: 153%;
+	left: -60%;
+	display: none;
+	width: 200px;
+	padding: 5px;
+	z-index: 1;
+}
+.login_form span
+{
+	position: relative;
+	display: block;
+}
+.login_form span:before
+{
+	content: " ";
+	border-style: solid;
+	border-width: 20px;
+	border-color: transparent transparent black transparent;
+	position: absolute;
+	left: 36%;
+	top: -46px;
+}
+.login_form input
+{
+	margin-bottom: 2px;
+}
+.login_form .btn
+{
+	margin-bottom: 0px;
+}
+.login_start
+{
+	color: #FFF;
+	cursor: pointer;
+}
+.login_start:hover
+{
+	color: orange;
+	cursor: pointer;
+}
+.active_login
+{
+	color: green;
+}
+.active_cat
+{
+	color: #FFF !important;
+	position: relative !important;
+}
+.active_cat:after
+{
+	content: " ";
+	position: absolute;
+	top:40px;
+	left: 0px;
+	border: 2px solid #00cfff;
+	width : 100% ;
+	z-index: 1;
+}
+/* End user nav style */
+/* start user navbar style */
+.main_navbar .navbar
+{
+	z-index: 1 !important;
+	background-color: #333;
+	border:none;
+	position: relative;
+}
+/* end user nav style */
+/* #################
+#################### End Navbar Style
+#################### */
+
+/* Start Sign uo style */
+.caontain_head
+{
+	font-size: 30px;
+	padding-bottom: 20px;
+	
+}
+.caontain_head span
+{
+	color: #555;
+	font-style: initial;
+	cursor: pointer;
+	margin: 10px;
+}
+[data-class="login"].selected
+{
+	color: rgb(0, 141, 222);;
+}
+[data-class="signup"].selected
+{
+	color: rgb(68, 157, 68);
+}
+.signup
+{
+	margin: 25px auto;
+	display: none;
+}
+
+.login
+{
+	width: 300px;
+	margin: 30px auto;
+}
+.login h4
+{
+	color: #888;
+	display: block;
+}
+.login input
+{
+	margin-bottom: 10px;
+}
+.login .form-controll 
+{
+	background-color: #EAEAEA;
+}
+.login .btn
+{
+	background-color: #008dde; 
+}
+/* end Sign Up style */
+/*#######################
+######################### End Sign Up And login Style page
+######################### */
+
+
+
+
+
+
+/*#####################
+####################### Start Categories Container Style And main page almostly With the Categories Style
+#######################*/
+/* start categories style site not main */
+.items_container_space
+{
+	padding: 7.5px;
+	position: relative;
+}
+.items_container_space .items .pretty_data
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.678);
+	z-index: 1;
+	display: none;
+}
+.items_container_space .items .pretty_data ul
+{
+	color: rgb(255, 255, 255);
+	padding:20px 10px 10px 20px;
+}
+.items_container_space .items .pretty_data ul li
+{
+	margin-bottom: 7.5px;
+	max-height: 20px;
+	overflow:hidden;
+}
+.items_container_space .items .pretty_data .ul_pretty .li1
+{
+	color: #00FF00;
+}
+.items_container_space .items .pretty_data .ul_pretty .li2
+{
+	color: #df4823;
+}
+.items_container_space .items .pretty_data .ul_pretty .li3
+{
+	color: #00cfff;
+}
+.items_container_space .items .pretty_data .ul_pretty .li4
+{
+	max-height: 69px;
+	color: #ffa500;
+}
+.items_container_space .items .pretty_data .ul_pretty .li4 a
+{
+	color: rgb(255, 136, 0);
+	padding : 3px 7px;
+	border:1px solid yellow;
+	display: inline-block;
+	margin-left: 3px;
+	margin-top: 3px;
+	background-color: rgba(0, 0, 0, 0.671);
+}
+.items_container_space .items .pretty_data .ul_pretty .li4 a:hover
+{
+	color: rgb(255, 217, 0);
+	text-decoration: none;
+}
+.items_container_space .items .pretty_data .ul_pretty hr
+{
+	margin: 0px;
+	padding: 0px;
+}
+.items_container_space .items .pretty_data .hide_pretty
+{
+	position: absolute;
+	bottom: 0;
+	right: 40%;
+	cursor: pointer;
+}
+.items_container_space .items .pretty_data .hide_pretty:hover
+{
+	color: #F00;
+}
+.desc_pretty
+{
+	font-size: 14px;
+	color: #000;
+	margin: 0px;
+	padding: 0px;
+	max-height: 210px;
+	overflow: hidden;
+}
+.items
+{	
+	max-height: 440px;
+	min-height: 440px;
+	overflow: hidden;
+	border: 1px solid #000;
+	position: relative;
+	padding: 5px;
+	background-color: #FFF;
+	box-shadow: 3px 0px 20px 2px grey;
+	transition: 0.5s ease-in-out;
+	border-radius: 5%;
+
+}
+.items:hover
+{
+	border: 1px solid red;
+}
+.items .edit_item
+{
+	position: absolute;
+	top: 0px;
+	right: 7px;
+	color: rgb(0, 0, 0);
+}
+.items .delete_item
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-left: 5px;
+	color: red;
+}
+.href_items
+{
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+	overflow: hidden;
+}
+.href_items:hover
+{
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+.items .item_img
+{
+
+	margin: 0 auto;
+	transition: 0.5s ease-in-out;
+	min-height: 250px;
+	max-height: 250px;
+	border-radius: 5px;
+}
+.items .item_img:hover
+{
+	transform: scale(1.05);
+	box-shadow: 3px 2px 20px 0px black;
+}
+
+.items .item_title
+{
+	margin: 5px 0px 0px;
+	padding: 7px 0px 7px 0px;
+	padding-left: 5px;
+	color: #000;
+	border-top: 1px solid #000;
+	border-bottom : 1px solid #EEE;
+	border-left:2px solid red;
+	max-height: 35px;
+	min-height: 35px;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	font: bold 18px Tahoma ;
+}
+/*
+.items .item_title:after
+{
+	content: " .....";
+	position: absolute;
+	top: 9%;
+	right: 0%;
+	background-color: #FFF;
+}
+*/
+.items .price_div
+{
+	margin-top: 10px;
+	cursor: default;
+	color: #333;
+	font-size: 14px;
+	position: relative;
+}
+
+.items .price_div .price
+{
+	color: red;
+	border: 2px solid #000;
+	line-height: -10px;
+	border-radius: 50%;
+	padding: 7px;
+	background-color: #fff;
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	transition:all 1s ease-in-out;
+	display: block;
+	position: absolute;
+	bottom: -55%;
+	left: 22%;
+	animation: price .8s linear infinite alternate;
+}
+.items .price_div span:hover
+{
+	-webkit-transform: rotate(360deg) scale(1.2);
+	-moz-transform: rotate(360deg) scale(1.2);
+	-o-transform: rotate(360deg) scale(1.2);
+	transform: rotate(360deg) scale(1.2);
+
+}
+.items .price_div .more_details
+{
+	position: absolute;
+	display: inline-block;
+	top: -7.5px;
+	right: 0px;
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+	transition: all 1s ease-in-out;
+}
+.items ul .price_veiws_comments
+{
+	font-weight: bold;
+	width: 100%;
+
+}
+.items ul li .comments
+{
+	padding: 10px 3px 5px;
+	font-weight: bold;
+	border-radius: 10px;
+	float: left;background-color: #DDD;
+	border:1px solid #CCC;
+}
+.items ul li .views
+{
+	font-weight: bold;
+	float: right;
+	padding: 10px 3px 5px;
+	background-color: #DDD;
+	border-radius: 10px;
+	border:1px solid #CCC;
+}
+.items .item_description,
+.items .item_description .h3
+{
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.5em;
+}
+.items .item_description:hover,
+.items .item_description .h3:hover
+{
+	color: red;
+}
+.items .member_date 
+{
+	font-size:14px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	padding:5px 10px 5px;
+	cursor: default;
+	background-color: #DDD;
+	border-top: 1px solid #CCC;
+
+}
+.items .member_date .item_date
+{
+	color: red;
+}
+.items .member_date .item_member
+{
+	color: #333;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.items .member_date .item_member:hover
+{
+	color: red;
+}
+/* end categories style site not main */
+/*#####################
+Ednd The categories Style and The main page style
+####################### 
+*/
+
+
+/*#####################
+Start The Item Show Page Style 
+####################### 
+*/
+/* Start items Style */
+.all_items
+{
+	background-color: #FFF;
+	border-radius: 10px;
+}
+.all_items .image_item
+{
+	border-radius: 5px 0% 5% 5%;
+	padding: 10px;
+}
+.all_items .image_item img
+{
+	margin: 0 auto;
+	border-radius: 5%;
+}
+.all_items .contain_all
+{
+	position: relative;
+	border-radius: 5px 0% 5% 5%;
+	min-height: 220px;
+}
+.all_items .contain_all h3
+{
+	border-bottom: 1px solid #DDD;
+	padding: 0px 10px 15px 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	word-wrap: break-word;
+	color: #000;
+}
+.all_items .contain_all .item_description_container
+{
+	font-size: 17px;
+	padding: 5px 10px 20px;
+	word-wrap: break-word;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+	font-weight: normal;
+	line-height: 1.5em;
+
+}
+/*
+	design the inputs style of the str_replace
+*/
+.all_items .contain_all .item_description_container .item_subtitle_info
+{
+	font-weight: bold;
+	font-size: 20px;
+	border-bottom: 1px solid black;
+	display:block;
+	padding:10px;
+	background-color: #EEE;
+	color: #428BCA;
+}
+.all_items .contain_all .item_description_container ul , .all_items .contain_all .item_description_container ol
+{
+	display:block;
+	background-color: #EEE;
+}
+.all_items .contain_all .item_description_container ul li , .all_items .contain_all .item_description_container ol li
+{
+	color: #333;
+	margin: -10px 0px;
+}
+/* end style */
+
+
+.all_items .contain_all .price_btn
+{
+	position: relative;
+	min-height: 40px;
+	max-height: 40px;
+	border-bottom: 1px solid #DDD;
+}
+.all_items .contain_all .item_price
+{
+	position: absolute;
+	top: 0%;
+	left: 5%;
+}
+.all_items .contain_all .item_price span
+{
+	position: absolute;
+	bottom: -35%;
+	left: 105%;
+	display: block;
+	color: red;
+	border: 2px solid #000;
+	line-height: -10px;
+	border-radius: 50%;
+	padding: 7px;
+	background-color: #fff;
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	transition:all 1s ease-in-out;
+}
+.all_items .contain_all .item_price span:hover
+{
+	-webkit-transform: rotate(360deg) scale(1.2);
+	-moz-transform: rotate(360deg) scale(1.2);
+	-o-transform: rotate(360deg) scale(1.2);
+	transform: rotate(360deg) scale(1.2);
+}
+.all_items .contain_all .btn
+{
+	position: absolute;
+	top: -30%;
+	left: 50%;
+	display: block;
+}
+.status_quantity
+{
+	padding: 10px;
+	border-radius: 5%;
+	border-bottom: 1px solid #AAA;
+}
+.status_quantity .Status
+{
+	margin: 4%;
+}
+.status_quantity .Status span
+{
+	color: red;
+	font-family: initial;
+	font-weight: bold;
+	font-size: 17px;
+}
+.status_quantity .Quantity
+{
+	margin: 4%;
+}
+.status_quantity .Quantity span
+{
+	color: red;
+	font-family: initial;
+	font-weight: bold;
+	font-size: 17px;
+}
+.status_quantity .Country_Made
+{
+	margin: 4%;
+}
+.status_quantity .Country_Made span
+{
+	color: red;
+	font-family: initial;
+	font-weight: bold;
+	font-size: 17px;
+}
+.item_tags
+{
+	padding: 10px;
+	border-radius: 5%;
+	border-bottom: 1px solid #AAA;
+}
+.item_tags span a
+{
+	display: inline-block;
+	background-color: #CCC;
+	padding: 5px;
+	border-radius: 5%;
+	margin : 5px;
+	border:1px solid #000;
+	
+}
+.all_items .contain_all .user_date
+{
+	padding: 10px;
+	background-color: #DDD;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+.all_items .contain_all .username_item
+{
+	padding-right: 20%;
+	border-right: 2px solid #DDD;
+}
+.all_items .contain_all .add_date_item span
+{
+	color: red;
+}
+
+/* 
+ Start Add Comment section
+*/
+.item_add_comment .btn
+{
+	margin-top: 15px;
+}
+.item_add_comment textarea
+{
+ border:1px solid green;
+ resize:none;
+}
+.item_add_comment
+{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 5px solid red;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	background-color: #FFF;
+}
+/*  End addd comment section*/
+
+/* start comemnt container */
+.comment_container
+{
+	position: relative;
+	background-color: #FFF;
+	height: 100%;
+	width: 100%;
+}
+.comment_container .comment_username
+{
+	position: absolute;
+	top: 0%;
+	left:0%;
+	text-align: center;
+	border-radius: 5%;
+	padding: 8px;
+	min-width: 150px;
+	z-index: 1;
+}
+.items_comments_container
+{
+	background-color: #FFF;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding-bottom:10px;
+	border-left: 4px solid #00FF00;
+	border-top: 2px solid #F00;
+	border-bottom: 1px solid #000;
+}
+.items_comments_container hr:last-child
+{
+	display: none;
+}
+.comment_container .comment_date
+{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	text-align: center;
+	border-radius: 5%;
+	padding: 8px;
+	min-width: 150px;
+	z-index: 1;
+	color: red;
+}
+.image_comments_container
+{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0px auto;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+.image_comments_container img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.comment_container hr
+{
+	margin-top: 39px;
+    margin-bottom: 8px;
+    border-top: 1px solid #b97a7a42;
+}
+.comment_container .the_comment
+{
+	border-radius: 10px;
+	position: relative;
+	padding: 5px 10px;
+	word-wrap: break-word;
+	max-height: 300px;
+	line-height: 1.5em;
+	background-color: #EEE;
+	border:1px solid #CCC;
+}
+.comment_container .the_comment:before
+{
+	content: "";
+	height: 0px;
+	width: 0px;
+	border-width: 15px;
+	border-color:transparent #EEE transparent transparent;
+	border-style: solid;
+	position: absolute;
+	top: 0px;
+	left: -28px;
+}
+.another_hr
+{
+	margin-top: 0;
+    margin-bottom: 0;
+    border : 1px solid #000;
+}
+
+/* end comment container */
+/* start Random items Section */
+.random_item_head
+{
+	font-weight: bold;
+	color: red;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #DDD;
+	color: red;
+}
+.ranodm_items
+{
+	margin-top: 20px;
+}
+/* end random items Section */
+/* end items style */
+/*#####################
+End The Item Show Page Style 
+####################### 
+*/
+/*#######################
+######################### This is Sign Up And login Style page
+######################### */
+
+
+
+/*#####################
+####################### This is The profile Style
+#######################
+*/
+
+
+/* start profile style */
+/* container information for public and private profile */
+.container_info div.panel-heading
+{
+	background-color: skyblue;
+	position: relative;
+}
+.container_info div.panel-heading a.btn
+{
+	position: absolute;
+	top :10%;
+	right: 2%;
+}
+.container_info div.panel-body ul
+{
+	margin: 0px; padding: 0px;
+}
+.container_info div.panel-body ul li
+{
+	display: block;
+	position: relative;
+	padding:10px;
+}
+.container_info div.panel-body ul li:nth-child(odd)
+{
+	background-color: #DDD;
+}
+.container_info div.panel-body ul li strong
+{
+	position: absolute;
+	top: 25%;
+	left: 30%;
+}
+/* Start container items for private and public profile expect approves */
+.container_items div.panel-heading
+{
+	background-color: skyblue;
+	position: relative;
+}
+.container_items div.panel-heading a.btn
+{
+	position: absolute;
+	right: 2%;
+	top: 10%;
+}
+.container_items .item_noaprove
+{
+    background-color: #e49f2169;
+    display: inline-block;
+    position: absolute;
+    top: -286px;
+    left: -5px;
+    padding: 5px;
+    border-radius: 5%;
+	
+}
+.container_items .item_noaprove:hover
+{
+	transform: scale(1) !important;
+	background-color: #ffa500;
+}
+.container_items .item_aproved
+{
+    background-color: #36e41769;
+    display: inline-block;
+    position: absolute;
+    top: -286px;
+    left: -5px;
+    padding: 5px;
+    border-radius: 5%;
+	
+}
+.container_items .item_aproved:hover
+{
+	transform: scale(1) !important;
+	background-color: #27ff00;
+}
+/* comment container for prevate profile only due to no public comments into profile */
+.comment_container_main
+{
+	margin-top: 20px;
+}
+.comment_container_main .panel-heading
+{
+	background-color: skyblue;
+}
+.comment_container_main .panel-body h3
+{
+	color: #333;
+	padding: 10px;
+	margin: 0 auto;
+}
+.comment_container
+{
+	position: relative;
+}
+.comment_container .ucomment
+{
+	padding-right: 10px;
+	background-color: #FFF;
+	z-index: 10 ;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 6px;
+}
+.comment_container .ucomment:before
+{
+    content: " ";
+    border-style: solid;
+    border-width: 18px;
+    border-color: transparent transparent transparent #FFF;
+    position: absolute;
+    top: -4px;
+    left: 100%;
+}
+.comment_container .comment
+{
+	display: block;
+	background-color: #EEE;
+	padding: 10px;
+	position: relative;
+	text-indent: 150px;
+	z-index: 1 ;
+	word-wrap: break-word;
+	border-radius: 10px;
+}
+
+/* end profile style */
+
+/* item profile add style */
+.item_panel .panel-heading
+{
+	background-color: skyblue;
+}
+.item_panel 
+{
+	border : 1px solid skyblue;
+	margin-bottom:50px;
+}
+.item_panel .add_item_input_style
+{
+	resize: none;
+	border: none;
+	background-color: #333;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px 10px 10px 10px;
+	margin: 35px 0px;
+	width: 100%;
+	height: 400px;
+	opacity: 1 !important;
+	position: relative;
+}
+.item_panel .add_item_input_style_container:before
+{
+	content: " ";
+	border : 20px solid #333;
+	position: absolute;
+	top: -30px;
+	left: 0%;
+	width: 100%;
+}
+
+.item_panel .add_item_input_style_container
+{
+	position: relative;
+}
+.item_panel .add_item_input_style_container .link_item,
+.item_panel .add_item_input_style_container .link_subtitle,
+.item_panel .add_item_input_style_container .link_image,
+.item_panel .add_item_input_style_container .link_ollist,
+.item_panel .add_item_input_style_container .link_ullist
+{
+	position: absolute;
+	top: -25px;
+	left: 2%;
+	opacity: 999 !important;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 13px;
+}
+.item_panel .add_item_input_style_container .link_item:hover,
+.item_panel .add_item_input_style_container .link_subtitle:hover,
+.item_panel .add_item_input_style_container .link_image:hover,
+.item_panel .add_item_input_style_container .link_ollist:hover,
+.item_panel .add_item_input_style_container .link_ullist:hover
+{
+	color: red;
+	text-decoration: underline;
+}
+.item_panel .add_item_input_style_container .link_subtitle
+{
+	left: 18%;
+}
+.item_panel .add_item_input_style_container .link_image
+{
+	left: calc(18% + 20%);
+}
+.item_panel .add_item_input_style_container .link_ollist
+{
+	left: calc(18% + 20% + 20%);
+}
+.item_panel .add_item_input_style_container .link_ullist
+{
+	left: calc(18% + 20% + 20% + 20%);
+}
+/* end item */
+/* Edit Profile Style */
+.user_image_container .user_image_background
+{
+	z-index: 1;
+	background-color: #FFF;
+	position: relative;
+	border-radius: 5%;
+}
+.user_image_container .user_image_background .user_image_alert
+{
+	position: absolute;
+	top: 7.5px;
+	left: 7.5px;
+}
+.user_image_container .user_image_background .btn
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-radius: 5%;
+}
+.user_image_container .user_image
+{
+	opacity: 0;
+	z-index: 2;
+}
+/*#####################
+####################### EndThe profile Style
+#######################
+*/
+
+
+
+/*############################ 
+Start live links Style these links are in
+Items page and Categories page
+##############################*/
+/* live linsk start style */
+.move_links span
+{
+	border-bottom:2px solid black;
+	padding: 0px 10px 10px;
+	border-radius: 10%;
+	color: red;
+	display: block;
+	margin-bottom: 15px;
+	margin-top: -5px;
+	font-size: 12px;
+}	
+.move_links span i
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.move_links span a
+{
+	color: black;
+	max-width: 30%;
+}
+/*  end live links style */
+
+/* project media screen */
+@media (max-width: 767px)
+{
+	.user_navbar .user_nav .user_click
+	{
+		min-width: 100%;
+	}
+
+	.login_signup
+	{
+		display: none;
+	}
+	.user_navbar .navbar-nav .subcats_navbar
+	{
+		position: relative;
+		background-color: #333;
+		width: 100%;
+		text-align: center;	
+		display: none;
+		z-index: 999;
+	}
+	.user_navbar .navbar-nav .subcats_navbar .mister_li_sub
+	{
+		position: relative;
+	}
+	.user_navbar .navbar-nav .subcats_navbar .mister_li_sub a
+	{
+		padding: 7px;
+		display:block;
+		text-decoration:none;
+		color:#b2bcc5;
+		-webkit-transition: padding 0.5s ease-in-out;
+		-moz-transition: padding 0.5s ease-in-out;
+		-o-transition: padding 0.5s ease-in-out;
+		transition: padding 0.5s ease-in-out;
+	}
+	.user_navbar .navbar-nav .subcats_navbar li a:hover
+	{
+		color: #FFF;
+		text-decoration: none;
+		background-color: #555;
+		padding-left:15px;
+	}
+	.items
+	{
+		margin-top: 10px;
+	}
+	.all_items .contain_all .add_date_item
+	{
+		display: block;
+		padding-top: 5px;
+	}
+	/* the comments photo into items page */
+	.image_comments_container
+	{
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0px auto;
+		position: absolute;
+		top: 20px;
+		left: 0px;
+	}
+	.container_info div.panel-body ul li strong
+	{
+		position: relative;
+		display: inline-block;
+		top: 0px;left: 10px;
+	}
+	.container_info div.panel-body ul li
+	{
+		width: 100%;
+		overflow: hidden;
+		display: inline-block;
+	}
+	.comment_container hr
+	{
+		margin-top: 0px;
+	    margin-bottom: 30px;
+	    border-top: 1px solid #b97a7a42;
+	}
+	.form_phone_fix
+	{
+		padding: 0px 15px;
+		margin: 0 auto;
+	}
+	/* comment user img */
+	.user_img
+	{
+		margin-top: 30px;
+	}
+}
+@media (min-width: 767px)
+{
+	.navbar-nav>li
+	{
+		float: right !important;
+	}
+	.navbar-nav
+	{
+		float: none;
+	}
+	.user_navbar .navbar-nav .subcats_navbar
+	{
+		position: absolute;
+		top: 67px;
+		left: -23%;
+		background-color: #333;
+		min-width: 200px;
+		text-align: center;	
+		border-radius: 5%;
+		display: none;
+		z-index: 999;
+	}
+	.user_navbar .navbar-nav .subcats_navbar .mister_li_sub
+	{
+		position: relative;
+	}
+	.user_navbar .navbar-nav .subcats_navbar .mister_li_sub:before
+	{
+		content: " ";
+		border-width: 24px;
+		border-color: transparent transparent #333 transparent;
+		border-style: solid;
+		position: absolute;
+		top: -48px;
+		left: 75px;
+	}
+	.user_navbar .navbar-nav .subcats_navbar .mister_li_sub a:first-child
+	{
+		border-radius: 10%;
+	}
+	.user_navbar .navbar-nav .subcats_navbar .mister_li_sub a:last-child
+	{
+		border-radius: 10%;
+	}
+	.user_navbar .navbar-nav .subcats_navbar .mister_li_sub a
+	{
+		padding: 7px;
+		display:block;
+		text-decoration:none;
+		color:#b2bcc5;
+		-webkit-transition: padding 0.5s ease-in-out;
+		-moz-transition: padding 0.5s ease-in-out;
+		-o-transition: padding 0.5s ease-in-out;
+		transition: padding 0.5s ease-in-out;
+		margin: 5px;
+	}
+	.user_navbar .navbar-nav .subcats_navbar li a:hover
+	{
+		color: #FFF;
+		text-decoration: none;
+		background-color: #555;
+		padding-left:15px;
+	}
+
+}
+
+/* project media screen */
+/* project animation */
+/* i commented them due to computer speed problems */
+
+/* 
+@keyframes icon 
+{
+	from {transform: scale(1);}
+	to {transform: scale(1.1);}
+}
+
+@keyframes price 
+{
+	0% {color :#333;border: 2px solid #333; transform: scale(0.9);}
+	25% {color:#000;border: 2px solid #000; transform: scale(1.04);}
+	75% {color:orange;border: 2px solid #080; transform: scale(1.06);}
+	100% {color:red;border: 2px solid #080; transform: scale(1.08);}
+}
+*/
+/* End project animation */
